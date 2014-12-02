@@ -1,24 +1,25 @@
-/* line 1, /Users/appleadmin/Documents/Code Fellows/JavaScript/Guess-A-Hex/main.sass */
 html {
   margin: 2em; }
 
-/* line 4, /Users/appleadmin/Documents/Code Fellows/JavaScript/Guess-A-Hex/main.sass */
 body {
   background: #222;
-  text-align: center; }
+  text-align: center;
+  font-family: "Monaco"; }
 
-/* line 8, /Users/appleadmin/Documents/Code Fellows/JavaScript/Guess-A-Hex/main.sass */
 h1 {
   color: white;
   font-family: "CodyStar"; }
 
-/* line 12, /Users/appleadmin/Documents/Code Fellows/JavaScript/Guess-A-Hex/main.sass */
-h2 {
+.pick {
   color: white;
   font-weight: 100;
-  font-family: "Glober"; }
+  font-size: 7em;
+  margin: 0; }
 
-/* line 19, /Users/appleadmin/Documents/Code Fellows/JavaScript/Guess-A-Hex/main.sass */
+.strikes {
+  color: white;
+  font-size: 1em; }
+
 .color {
   background-color: silver;
   height: 200px;

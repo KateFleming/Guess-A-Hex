@@ -50,9 +50,11 @@
       if(strikes < 1){
         alert("Boom! You lost.");
         counter = start;
+        strikes = 3;
+        $('.strikes').text(strikes + " tries left");
         build();
       } else {
-        alert(strikes + " tries left");
+        $('.strikes').text(strikes + " tries left");
       }
     }
     
