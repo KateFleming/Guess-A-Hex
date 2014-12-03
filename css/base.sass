@@ -7,11 +7,20 @@ body
   font-size: 0.5em
   @media (min-width: $viewport-large)
     font-size: 1em
+.cover
+  position: fixed
+  height: 100%
+  width: 100%
+  top: 0
+  left: 0
+  background: rgba(255,0,0,0.6)
+  display: none
 .title
-  color: white
-  font-family: "CodyStar"
-  margin: 50px 0 0 0
-  font-size: 4em
+  h1
+    color: white
+    font-family: "CodyStar"
+    margin: 50px 0 0 0
+    font-size: 4em
 button
   font-family: "Bitter"
   background: $primary-color
@@ -54,7 +63,7 @@ button
     @media (min-width: $viewport-large)
       height: 200px
       width: 200px
-    &:hover
+    .no-touch &:hover
       border: 10px solid rgba(255,255,255,0.4)
       box-shadow: 0 0 30px rgba(255,255,255,0.3)
 .score

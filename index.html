@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>
-      Color Game
-    </title>
+    <title>Guess the Hex</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Think you have mad hex color skills? Prove it." />
     <link rel="stylesheet" type="text/css" href="css/app.css">
     <link href='http://fonts.googleapis.com/css?family=Codystar|Bitter:400,700' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="js/modernizr.js"></script>
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js">    </script>
     <script src="js/tinycolor.js"></script>
@@ -23,7 +23,10 @@
   </head>
   <body>
     <header>
-      <h1 class="title">Guess the Hex</h1>
+      <div class="title">
+        <h1>Guess the Hex</h1>
+        <h2>Let's see those mad hex value skills.</h2>
+      </div>
       <h2 class="score"></h2>
       <div class="console">
         <h1 class="timer"></h1>
@@ -31,10 +34,11 @@
       </div>
       <h2 class="pick"></h2>
     </header>
-    <button class="start" data-level="hard">Hard</button>
-    <button class="start" data-level="medium">Medium</button>
-    <button class="start" data-level="easy">Easy</button>
+    <button class="start" data-level="hard">Beast Mode</button>
+    <button class="start" data-level="medium">Meh</button>
+    <button class="start" data-level="easy">Weak Sauce</button>
     <div class="colors"></div>
+    <div class="cover"></div>
     <!-- Load Scripts -->
     <script src="js/stopwatch.js"></script>
     <script src="js/app.js"></script>

@@ -1,11 +1,11 @@
 //This is an app to randomly choose colors
 (function(){
-  var level = 8;
+  var level = 1;
   //Keeps tally of how many colors are avalible
   var counter = level;
   
   // Strikes
-  var startingStrikes = 3;
+  var startingStrikes = 30;
   var strikes = startingStrikes;
   
   // Max time in seconds
@@ -17,6 +17,7 @@
   var start = $('.start');
   var pickElem = $('.pick');
   var score = $('.score');
+  var cover = $('.cover');
   
   //Randomly generate colors
   function randomColor(){
@@ -60,18 +61,18 @@
       if(strikes < 1){
         reset("fail");
       } else {
+        cover.show().fadeOut(400);
         $('.strikes').text(strikes);
       }
     }
-    
   });
   
   function toggleDisplay(){
-    start.toggle();
-    pickElem.toggle();
-    colorsContainer.toggle();
-    $('.console').toggle();
-    $('.title').toggle();
+    start.add(pickElem).
+    add(colorsContainer).
+    add('.console').
+    add('.title').
+    toggle();
   }
   
   function reset(status){
@@ -79,10 +80,10 @@
     switch(status){
       case "win":
         var _score = (maxtime - stopwatch.time()) * 10;
-        score.html("Yehaw! You scored a <em>" + _score + "</em>");
+        score.html("Yeehaw! You scored a <em>" + _score + "</em>");
         break;
       case "fail":
-        score.text("Boo. You Failed.");
+        score.html("Fail! You got <em>0</em> points.");
         break;
       default:
         score.text("");
