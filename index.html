@@ -4,19 +4,29 @@
     <title>
       Color Game
     </title>
-    <link rel="stylesheet" type="text/css" href="main.css">
-    <link href='http://fonts.googleapis.com/css?family=Codystar' rel='stylesheet' type='text/css'>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="css/app.css">
+    <link href='http://fonts.googleapis.com/css?family=Codystar|Bitter:400,700' rel='stylesheet' type='text/css'>
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js">    </script>
-    <script src="tinycolor.js"></script>
+    <script src="js/tinycolor.js"></script>
   </head>
   <body>
     <header>
-      <h1>Can you guess the Hex?</h1>
-      <p class="strikes"></p>
+      <h1 class="title">Guess the Hex</h1>
+      <h2 class="score"></h2>
+      <div class="console">
+        <h1 class="timer"></h1>
+        <p>Tries: <span class="strikes">3</span></p>
+      </div>
       <h2 class="pick"></h2>
     </header>
+    <button class="start" data-level="hard">Hard</button>
+    <button class="start" data-level="medium">Medium</button>
+    <button class="start" data-level="easy">Easy</button>
     <div class="colors"></div>
-    <script src="main.js"></script>
+    <!-- Load Scripts -->
+    <script src="js/stopwatch.js"></script>
+    <script src="js/app.js"></script>
   </body>
 </html>

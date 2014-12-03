@@ -1,0 +1,62 @@
+body
+  background: #222
+  text-align: center
+  font-family: "Bitter"
+  color: white
+  background: $dark-color
+.title
+  color: white
+  font-family: "CodyStar"
+  margin: 20px 0
+  font-size: 2.5em
+  @media (min-width: 500px)
+    font-size: 4em
+    margin: 100px 0
+button
+  font-family: "Bitter"
+  background: $primary-color
+  padding: 30px
+  font-size: 3em
+  color: white
+  border-radius: 10px
+  border: none
+.pick
+  font-weight: 100
+  font-size: 7em
+  margin: 0
+  display: none
+  text-transform: uppercase
+.start
+  display: block
+  margin: 20px auto
+  width: 80%
+  @media (min-width: 700px)
+    width: 50%
+.console
+  display: none
+  color: white
+  font-size: 2em
+  text-align: left
+  h1, p
+    margin: 0
+.colors
+  display: none
+  .color
+    background-color: silver
+    height: 200px
+    width: 200px
+    display: inline-block
+    margin: 5px 8px
+    box-shadow: 0 0 5px rgba(255,255,255,0.1)
+    cursor: pointer
+    box-sizing: border-box
+    
+    &:hover
+      border: 10px solid rgba(255,255,255,0.4)
+      box-shadow: 0 0 30px rgba(255,255,255,0.3)
+.score
+  font-weight: 400
+  em
+    font-weight: 700
+    font-style: normal
+    color: $primary-color
