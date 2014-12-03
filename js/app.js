@@ -8,6 +8,9 @@
   var startingStrikes = 3;
   var strikes = startingStrikes;
   
+  // An array of correct answers
+  var correctAnswers = [];
+  
   // Max time in seconds
   var maxtime = 300;
   
@@ -50,6 +53,7 @@
   colorsContainer.on('click','.color',function(){
     var background = $(this).attr("data-color");
     if (background == pick) {
+      correctAnswers.push(background);
       counter--; 
       if ( counter < 2) {
         reset("win");
@@ -79,11 +83,11 @@
     // Show the score
     switch(status){
       case "win":
-        var _score = (maxtime - stopwatch.time()) * 10;
-        score.html("Yeehaw! You scored a <em>" + _score + "</em>");
+        var _score = (maxtime - stopwatch.time()) * level;
+        score.html("Yeehaw! You scored a <em>" + _score + "</em>. You got <em>" + correctAnswers.length + "</em> right.");
         break;
       case "fail":
-        score.html("Fail! You got <em>0</em> points.");
+        score.html("Fail! You got <em>0</em> points and got <em>" + correctAnswers.length + "</em> right.");
         break;
       default:
         score.text("");
