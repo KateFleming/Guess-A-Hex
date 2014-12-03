@@ -3,17 +3,17 @@ body {
   text-align: center;
   font-family: "Bitter";
   color: white;
-  background: #3D3736; }
+  background: #3D3736;
+  font-size: 0.5em; }
+  @media (min-width: 700px) {
+    body {
+      font-size: 1em; } }
 
 .title {
   color: white;
   font-family: "CodyStar";
-  margin: 20px 0;
-  font-size: 2.5em; }
-  @media (min-width: 500px) {
-    .title {
-      font-size: 4em;
-      margin: 100px 0; } }
+  margin: 50px 0 0 0;
+  font-size: 4em; }
 
 button {
   font-family: "Bitter";
@@ -34,7 +34,8 @@ button {
 .start {
   display: block;
   margin: 20px auto;
-  width: 80%; }
+  width: 80%;
+  font-size: 3em; }
   @media (min-width: 700px) {
     .start {
       width: 50%; } }
@@ -51,13 +52,17 @@ button {
   display: none; }
   .colors .color {
     background-color: silver;
-    height: 200px;
-    width: 200px;
+    height: 85px;
+    width: 85px;
     display: inline-block;
     margin: 5px 8px;
     box-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
     cursor: pointer;
     box-sizing: border-box; }
+    @media (min-width: 700px) {
+      .colors .color {
+        height: 200px;
+        width: 200px; } }
     .colors .color:hover {
       border: 10px solid rgba(255, 255, 255, 0.4);
       box-shadow: 0 0 30px rgba(255, 255, 255, 0.3); }

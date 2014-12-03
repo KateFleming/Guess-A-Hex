@@ -103,10 +103,10 @@
         level = 12;
         break
       case "medium":
-        level = 8;
+        level = 9;
         break;
       case "easy":
-        level = 4;
+        level = 6;
         break;
     }
     reset("start");
