@@ -5,7 +5,7 @@
   var counter = level;
   
   // Strikes
-  var startingStrikes = 30;
+  var startingStrikes = 3;
   var strikes = startingStrikes;
   
   // Max time in seconds
