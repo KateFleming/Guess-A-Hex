@@ -17,6 +17,9 @@ body {
   background: rgba(255, 0, 0, 0.6);
   display: none; }
 
+a:link, a:visited {
+  color: #666; }
+
 .title h1 {
   color: white;
   font-family: "CodyStar";
